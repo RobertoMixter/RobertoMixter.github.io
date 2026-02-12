@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>MotoCenter | Catálogo de Motos (Demo)</title>
+  <title>MotoCenter | Catálogo de Motos</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,19 +30,22 @@
         <a href="#contacto">Contacto</a>
       </nav>
 
-      <button class="btn btn--ghost menuBtn" id="menuBtn" aria-label="Abrir menú">☰</button>
-      <a class="btn btn--primary" href="#catalogo">Ver motos</a>
+      <button class="btn btn--ghost menuBtn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">☰</button>
+
+      <a class="btn btn--primary headerCta" href="#catalogo">Ver motos</a>
     </div>
+
+    <div class="navOverlay" id="navOverlay" hidden></div>
   </header>
 
   <section class="hero">
     <div class="container hero__grid">
       <div class="hero__content">
-        <span class="badge">Catálogo actualizado · Consulta directa por WhatsApp</span>
+        <span class="badge">Catálogo actualizado · WhatsApp directo</span>
         <h1>Motos listas para entrega y financiamiento</h1>
         <p>
           Vitrina online con fotos, precio, ficha y botón de consulta por cada modelo.
-          Demo para mostrar a clientes.
+          Ideal para concesionarios pequeños.
         </p>
 
         <div class="hero__actions">
@@ -61,7 +64,7 @@
         <div class="hero__cardTop">
           <div>
             <h3>Destacada</h3>
-            <p class="muted">Ejemplo de producto con ficha y consulta directa</p>
+            <p class="muted">Ejemplo de ficha con consulta directa</p>
           </div>
           <span class="pill">Disponible</span>
         </div>
@@ -160,16 +163,16 @@
       </div>
 
       <div class="finance__card">
-        <h3>Lo que resuelve esta demo</h3>
+        <h3>Beneficios</h3>
         <ul class="list">
           <li>Catálogo siempre disponible.</li>
           <li>Cada moto con consulta directa.</li>
-          <li>Menos preguntas repetidas (modelo y precio van en el mensaje).</li>
+          <li>Menos preguntas repetidas.</li>
           <li>Mejor presentación y confianza.</li>
         </ul>
 
         <div class="note">
-          En un cliente real: se cambian textos, número de WhatsApp, modelos y fotos del inventario.
+          En un cliente real se cambia el inventario, textos y número de WhatsApp.
         </div>
       </div>
     </div>
@@ -180,7 +183,7 @@
       <div class="section__head">
         <div>
           <h2>Ubicación</h2>
-          <p class="muted">Mapa de ejemplo. En un cliente real se pone la dirección exacta.</p>
+          <p class="muted">Mapa de ejemplo. En un cliente real se usa la dirección exacta.</p>
         </div>
         <a class="btn btn--primary" href="#contacto">Contactar</a>
       </div>
@@ -270,4 +273,5 @@
   <script src="js/app.js"></script>
 </body>
 </html>
+
 
