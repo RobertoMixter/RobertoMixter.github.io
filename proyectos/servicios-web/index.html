@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Servicios Web | RobertoMixter</title>
+
+  <meta name="description" content="Páginas web profesionales para negocios: planes claros, demos reales y contacto directo por WhatsApp." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#inicio">
+        <span class="brand__mark">RM</span>
+        <span class="brand__text">
+          <b>RobertoMixter</b>
+          <small>Servicios Web</small>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#servicios">Servicios</a>
+        <a href="#planes">Planes</a>
+        <a href="#demos">Demos</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#preguntas">Preguntas</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <button class="iconBtn menuBtn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <a class="btn btn--primary headerCta" href="#contacto">Cotizar</a>
+    </div>
+
+    <div class="overlay" id="overlay" hidden></div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <span class="tag">Páginas web para negocios</span>
+          <h1>Webs modernas y rápidas para vender por WhatsApp</h1>
+          <p>
+            Diseño páginas profesionales con planes claros, entrega rápida y demos reales.
+            Ideal para tiendas, boutiques, servicios, concesionarios y negocios locales.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#planes">Ver planes</a>
+            <a class="btn btn--ghost" href="#demos">Ver demos</a>
+          </div>
+
+          <div class="stats">
+            <div class="stat"><b>Responsive</b><small>móvil y PC</small></div>
+            <div class="stat"><b>WhatsApp</b><small>directo</small></div>
+            <div class="stat"><b>Entrega</b><small>por plan</small></div>
+          </div>
+        </div>
+
+        <div class="hero__card">
+          <div class="hero__cardTop">
+            <div>
+              <h3>Lo que obtienes</h3>
+              <p class="muted">Estructura pensada para convertir</p>
+            </div>
+            <span class="pill">Enfoque ventas</span>
+          </div>
+
+          <div class="flow">
+            <div class="flow__item"><b>Inicio</b><span class="muted">propuesta + CTA</span></div>
+            <div class="flow__item"><b>Contenido</b><span class="muted">servicios/productos</span></div>
+            <div class="flow__item"><b>Pruebas</b><span class="muted">demos y confianza</span></div>
+            <div class="flow__item"><b>Contacto</b><span class="muted">WhatsApp y formulario</span></div>
+          </div>
+
+          <a class="btn btn--primary" href="#contacto">Cotizar ahora</a>
+          <p class="muted small">Respuesta rápida por WhatsApp.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="servicios">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Servicios</h2>
+            <p class="muted">Diseño orientado a confianza y resultados.</p>
+          </div>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="card">
+            <div class="card__top">
+              <b>Landing profesional</b>
+              <span class="chip">Presencia</span>
+            </div>
+            <p class="muted">Para mostrar tu negocio, servicios, ubicación y contacto.</p>
+            <ul class="list">
+              <li>Diseño responsive</li>
+              <li>WhatsApp y redes</li>
+              <li>Mapa y horarios</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <b>Catálogo</b>
+              <span class="chip">Venta</span>
+            </div>
+            <p class="muted">Productos por tarjetas con consulta directa.</p>
+            <ul class="list">
+              <li>Categorías y ofertas</li>
+              <li>Modal de detalle</li>
+              <li>WhatsApp por producto</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <b>Optimización</b>
+              <span class="chip">Confianza</span>
+            </div>
+            <p class="muted">Estructura y contenido para convertir mejor.</p>
+            <ul class="list">
+              <li>Testimonios y FAQ</li>
+              <li>SEO básico</li>
+              <li>Performance</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="planes">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Planes</h2>
+            <p class="muted">Precios en USD. Hosting y dominio no incluidos.</p>
+          </div>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="plan">
+            <div class="plan__top">
+              <b>Presencia</b>
+              <span class="pill">3–5 días</span>
+            </div>
+            <div class="plan__price">$150</div>
+            <div class="muted small">Para negocios que necesitan una web clara y contacto.</div>
+            <ul class="list">
+              <li>1 página con secciones</li>
+              <li>WhatsApp + mapa</li>
+              <li>Responsive</li>
+              <li>Publicación (GitHub Pages o hosting del cliente)</li>
+            </ul>
+            <div class="plan__actions">
+              <a class="btn btn--ghost" href="#demos">Ver demos</a>
+              <button class="btn btn--primary" data-plan="Presencia" type="button">Cotizar</button>
+            </div>
+          </article>
+
+          <article class="plan plan--featured">
+            <div class="plan__top">
+              <b>Catálogo</b>
+              <span class="pill">Recomendado</span>
+            </div>
+            <div class="plan__price">$280</div>
+            <div class="muted small">Para tiendas/boutiques: productos + WhatsApp por producto.</div>
+            <ul class="list">
+              <li>Todo el plan Presencia</li>
+              <li>Catálogo por tarjetas</li>
+              <li>Ofertas + categorías</li>
+              <li>WhatsApp por producto</li>
+              <li>Carga inicial: hasta 20 productos</li>
+            </ul>
+            <div class="plan__actions">
+              <a class="btn btn--ghost" href="#demos">Ver demos</a>
+              <button class="btn btn--primary" data-plan="Catálogo" type="button">Cotizar</button>
+            </div>
+          </article>
+
+          <article class="plan">
+            <div class="plan__top">
+              <b>Profesional</b>
+              <span class="pill">8–12 días</span>
+            </div>
+            <div class="plan__price">$480</div>
+            <div class="muted small">Para una presencia sólida, más páginas y conversión.</div>
+            <ul class="list">
+              <li>Múltiples páginas</li>
+              <li>Testimonios + FAQ</li>
+              <li>SEO básico</li>
+              <li>Diseño avanzado</li>
+              <li>Carga inicial: hasta 40 productos</li>
+            </ul>
+            <div class="plan__actions">
+              <a class="btn btn--ghost" href="#demos">Ver demos</a>
+              <button class="btn btn--primary" data-plan="Profesional" type="button">Cotizar</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="noteBox">
+          <b>Opcional: Administrable</b>
+          <p class="muted">
+            Si el negocio quiere subir productos e imágenes por su cuenta (login + base de datos),
+            se cotiza como plan Administrable desde $750 USD (2–4 semanas).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="demos">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Demos reales</h2>
+            <p class="muted">Ejemplos funcionando para que veas el estilo y la estructura.</p>
+          </div>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="work">
+            <div class="work__thumb">Boutique</div>
+            <div class="work__body">
+              <b>Catálogo boutique</b>
+              <p class="muted">Categorías + ofertas + etiquetas + WhatsApp por producto.</p>
+              <div class="work__actions">
+                <a class="btn btn--primary" href="https://RobertoMixter.github.io/proyectos/boutique-demo/" target="_blank" rel="noopener">Ver demo</a>
+                <a class="btn btn--ghost" href="#planes">Ver plan</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="work">
+            <div class="work__thumb">Motos</div>
+            <div class="work__body">
+              <b>Concesionario motos</b>
+              <p class="muted">Catálogo + filtros + WhatsApp.</p>
+              <div class="work__actions">
+                <a class="btn btn--primary" href="https://RobertoMixter.github.io/proyectos/motos-demo/" target="_blank" rel="noopener">Ver demo</a>
+                <a class="btn btn--ghost" href="#planes">Ver plan</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="work">
+            <div class="work__thumb">Próximo</div>
+            <div class="work__body">
+              <b>Siguiente demo</b>
+              <p class="muted">Agregaremos más demos por tipo de negocio.</p>
+              <div class="work__actions">
+                <a class="btn btn--primary" href="#contacto">Solicitar</a>
+                <a class="btn btn--ghost" href="#proceso">Ver proceso</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="proceso">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Proceso de trabajo</h2>
+            <p class="muted">Cómo se desarrolla el proyecto para mantener orden y velocidad.</p>
+          </div>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="card">
+            <div class="card__top">
+              <b>1. Recolección</b>
+              <span class="chip">Inicio</span>
+            </div>
+            <p class="muted">Se recopila logo, fotos, textos, productos y datos del negocio.</p>
+            <ul class="list">
+              <li>WhatsApp y redes</li>
+              <li>Dirección y horarios</li>
+              <li>Lista de productos/servicios</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <b>2. Diseño y desarrollo</b>
+              <span class="chip">Construcción</span>
+            </div>
+            <p class="muted">Se crea la página con estructura clara y enfoque comercial.</p>
+            <ul class="list">
+              <li>Responsive</li>
+              <li>Secciones estratégicas</li>
+              <li>Pruebas en móvil/PC</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <b>3. Entrega</b>
+              <span class="chip">Publicación</span>
+            </div>
+            <p class="muted">Se publica la web y se hacen ajustes finales según el plan.</p>
+            <ul class="list">
+              <li>2 rondas de ajustes menores</li>
+              <li>Publicación online</li>
+              <li>Soporte inicial</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="preguntas">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Preguntas frecuentes</h2>
+            <p class="muted">Respuestas claras antes de iniciar.</p>
+          </div>
+        </div>
+
+        <div class="faq" id="faq">
+          <button class="faq__item" type="button">
+            <span><b>¿El precio incluye hosting y dominio?</b><span class="muted">No, se cotiza aparte.</span></span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__panel">
+            <p class="muted">
+              El pago cubre el desarrollo. Dominio y hosting son servicios externos.
+              Se puede publicar en GitHub Pages o configurar el hosting/dominio del cliente.
+            </p>
+          </div>
+
+          <button class="faq__item" type="button">
+            <span><b>¿Cómo se cargan las imágenes y productos?</b><span class="muted">Depende del plan.</span></span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__panel">
+            <p class="muted">
+              En Presencia/Catálogo/Profesional se hace una carga inicial con el material entregado.
+              Si se necesita que el cliente administre, se ofrece un plan Administrable.
+            </p>
+          </div>
+
+          <button class="faq__item" type="button">
+            <span><b>¿Cuántas revisiones incluye?</b><span class="muted">Incluye 2 rondas.</span></span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__panel">
+            <p class="muted">
+              Incluye 2 rondas de ajustes menores. Cambios adicionales se cotizan aparte.
+            </p>
+          </div>
+
+          <button class="faq__item" type="button">
+            <span><b>¿Cómo es el pago?</b><span class="muted">50/50 recomendado.</span></span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__panel">
+            <p class="muted">
+              50% para iniciar y 50% al finalizar antes de entregar la versión final publicada.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="contacto">
+      <div class="container contact">
+        <div class="contact__left">
+          <h2>Contacto</h2>
+          <p class="muted">Envíame tu solicitud y se abre WhatsApp con el mensaje listo.</p>
+
+          <div class="infoCards">
+            <div class="infoCard">
+              <small class="muted">WhatsApp</small>
+              <b id="whatsText">+505 0000 0000</b>
+            </div>
+            <div class="infoCard">
+              <small class="muted">Entrega</small>
+              <b>Según plan</b>
+            </div>
+            <div class="infoCard">
+              <small class="muted">Publicación</small>
+              <b>GitHub Pages / hosting del cliente</b>
+            </div>
+          </div>
+
+          <div class="note">
+            Recomendación: 50% adelanto / 50% contra entrega. Incluye 2 rondas de ajustes menores.
+          </div>
+        </div>
+
+        <form class="form" id="form">
+          <h3>Solicitar cotización</h3>
+
+          <div class="field">
+            <label>Nombre</label>
+            <input id="name" required placeholder="Tu nombre" />
+          </div>
+
+          <div class="field">
+            <label>Negocio</label>
+            <input id="biz" required placeholder="Ej. boutique, restaurante, taller..." />
+          </div>
+
+          <div class="field">
+            <label>Mensaje</label>
+            <textarea id="msg" required rows="4" placeholder="Quiero una web con catálogo y WhatsApp..."></textarea>
+          </div>
+
+          <button class="btn btn--primary" type="submit">Enviar por WhatsApp</button>
+          <p class="muted small">Se abrirá WhatsApp con el mensaje listo.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <a class="waFloat" id="waFloat" target="_blank" rel="noopener">WhatsApp</a>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="muted">© <span id="year"></span> RobertoMixter</p>
+      <a class="muted" href="#inicio">Inicio</a>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
