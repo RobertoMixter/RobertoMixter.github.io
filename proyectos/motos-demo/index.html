@@ -1,1 +1,273 @@
-<h1>Demo motos</h1>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MotoCenter | Catálogo de Motos (Demo)</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#">
+        <span class="brand__logo">MC</span>
+        <span class="brand__text">
+          <b>MotoCenter</b>
+          <small>Concesionario</small>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#catalogo">Catálogo</a>
+        <a href="#financiamiento">Financiamiento</a>
+        <a href="#ubicacion">Ubicación</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <button class="btn btn--ghost menuBtn" id="menuBtn" aria-label="Abrir menú">☰</button>
+      <a class="btn btn--primary" href="#catalogo">Ver motos</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <span class="badge">Catálogo actualizado · Consulta directa por WhatsApp</span>
+        <h1>Motos listas para entrega y financiamiento</h1>
+        <p>
+          Vitrina online con fotos, precio, ficha y botón de consulta por cada modelo.
+          Demo para mostrar a clientes.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#catalogo">Explorar catálogo</a>
+          <a class="btn btn--ghost" href="#financiamiento">Calcular cuota</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat"><b id="statTotal">0</b><small>modelos</small></div>
+          <div class="stat"><b>24/7</b><small>consultas</small></div>
+          <div class="stat"><b>WhatsApp</b><small>automático</small></div>
+        </div>
+      </div>
+
+      <div class="hero__card">
+        <div class="hero__cardTop">
+          <div>
+            <h3>Destacada</h3>
+            <p class="muted">Ejemplo de producto con ficha y consulta directa</p>
+          </div>
+          <span class="pill">Disponible</span>
+        </div>
+
+        <div class="featured" id="featured"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="catalogo">
+    <div class="container">
+      <div class="section__head">
+        <div>
+          <h2>Catálogo</h2>
+          <p class="muted">Busca por nombre, filtra por marca o por precio máximo.</p>
+        </div>
+      </div>
+
+      <div class="filters">
+        <div class="field">
+          <label>Buscar</label>
+          <input id="q" type="search" placeholder="Ej. Honda, Scooter, 150..." />
+        </div>
+
+        <div class="field">
+          <label>Marca</label>
+          <select id="brand"></select>
+        </div>
+
+        <div class="field">
+          <label>Precio máximo (USD)</label>
+          <input id="maxPrice" type="number" min="0" placeholder="Ej. 2500" />
+        </div>
+
+        <div class="field field--actions">
+          <button class="btn btn--primary" id="apply" type="button">Aplicar</button>
+          <button class="btn btn--ghost" id="reset" type="button">Limpiar</button>
+        </div>
+      </div>
+
+      <div class="grid" id="grid"></div>
+      <p class="muted center" id="empty" hidden>No hay resultados con esos filtros.</p>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="financiamiento">
+    <div class="container finance">
+      <div>
+        <h2>Calculadora de cuota</h2>
+        <p class="muted">Cálculo aproximado para orientar al cliente.</p>
+
+        <div class="calc">
+          <div class="field">
+            <label>Precio de la moto (USD)</label>
+            <input id="p" type="number" min="0" value="1800" />
+          </div>
+
+          <div class="field">
+            <label>Prima (USD)</label>
+            <input id="down" type="number" min="0" value="300" />
+          </div>
+
+          <div class="field">
+            <label>Plazo (meses)</label>
+            <select id="months">
+              <option>6</option>
+              <option>12</option>
+              <option>18</option>
+              <option selected>24</option>
+              <option>36</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>Tasa mensual (%)</label>
+            <input id="rate" type="number" min="0" step="0.01" value="2.5" />
+          </div>
+
+          <button class="btn btn--primary" id="calcBtn" type="button">Calcular</button>
+
+          <div class="result">
+            <div>
+              <small class="muted">Cuota estimada</small>
+              <b id="pay">$0</b>
+            </div>
+            <div>
+              <small class="muted">Monto financiado</small>
+              <b id="fin">$0</b>
+            </div>
+          </div>
+
+          <a class="btn btn--ghost" id="whatsFinance" target="_blank" rel="noopener">
+            Pedir info por WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="finance__card">
+        <h3>Lo que resuelve esta demo</h3>
+        <ul class="list">
+          <li>Catálogo siempre disponible.</li>
+          <li>Cada moto con consulta directa.</li>
+          <li>Menos preguntas repetidas (modelo y precio van en el mensaje).</li>
+          <li>Mejor presentación y confianza.</li>
+        </ul>
+
+        <div class="note">
+          En un cliente real: se cambian textos, número de WhatsApp, modelos y fotos del inventario.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="ubicacion">
+    <div class="container">
+      <div class="section__head">
+        <div>
+          <h2>Ubicación</h2>
+          <p class="muted">Mapa de ejemplo. En un cliente real se pone la dirección exacta.</p>
+        </div>
+        <a class="btn btn--primary" href="#contacto">Contactar</a>
+      </div>
+
+      <div class="map">
+        <iframe
+          title="Mapa"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Managua%20Nicaragua&output=embed">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="contacto">
+    <div class="container contact">
+      <div>
+        <h2>Contacto</h2>
+        <p class="muted">Formulario que abre WhatsApp con el mensaje listo.</p>
+
+        <div class="cards">
+          <div class="miniCard">
+            <small class="muted">WhatsApp</small>
+            <b id="whatsText">+505 0000 0000</b>
+          </div>
+          <div class="miniCard">
+            <small class="muted">Horario</small>
+            <b>Lun–Sáb · 8:00 AM – 6:00 PM</b>
+          </div>
+          <div class="miniCard">
+            <small class="muted">Correo</small>
+            <b>ventas@motocenter.com</b>
+          </div>
+        </div>
+      </div>
+
+      <form class="form" id="form">
+        <h3>Solicitar información</h3>
+
+        <div class="field">
+          <label>Nombre</label>
+          <input id="name" required placeholder="Tu nombre" />
+        </div>
+
+        <div class="field">
+          <label>Mensaje</label>
+          <textarea id="msg" required rows="4" placeholder="Quiero información de una moto / financiamiento..."></textarea>
+        </div>
+
+        <button class="btn btn--primary" type="submit">Enviar por WhatsApp</button>
+        <p class="muted small">Se abrirá WhatsApp con tu mensaje listo.</p>
+      </form>
+    </div>
+  </section>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__card" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+      <button class="modal__close" id="closeModal" aria-label="Cerrar">✕</button>
+      <div class="modal__grid">
+        <img id="mImg" alt="Moto" />
+        <div>
+          <h3 id="mTitle"></h3>
+          <p class="muted" id="mDesc"></p>
+
+          <div class="chips" id="mChips"></div>
+
+          <div class="priceRow">
+            <div>
+              <small class="muted">Precio</small>
+              <b id="mPrice"></b>
+            </div>
+            <a class="btn btn--primary" id="mWhats" target="_blank" rel="noopener">Consultar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="muted">© <span id="year"></span> MotoCenter · Demo</p>
+      <a class="muted" href="#catalogo">Ir al catálogo</a>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
+
