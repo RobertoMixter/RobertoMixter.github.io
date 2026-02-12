@@ -62,7 +62,7 @@ function renderFeatured() {
     </div>
     <div class="hero__actions">
       <a class="btn btn--primary" target="_blank" rel="noopener" href="${waLink(`Hola, me interesa la ${m.nombre}. ¿Está disponible?`)}">WhatsApp</a>
-      <button class="btn btn--ghost" type="button" onclick="openModal(${m.id})">Ver detalle</button>
+      <button class="btn btn--ghost" type="button" data-open="${m.id}">Ver detalle</button>
     </div>
   `;
 }
@@ -82,7 +82,7 @@ function cardTemplate(m) {
       </div>
       <div class="card__actions">
         <a class="btn btn--primary" target="_blank" rel="noopener" href="${waLink(msg)}">WhatsApp</a>
-        <button class="btn btn--ghost" type="button" onclick="openModal(${m.id})">Detalle</button>
+        <button class="btn btn--ghost" type="button" data-open="${m.id}">Detalle</button>
       </div>
       <div class="price">${formatMoney(m.precio)}</div>
     </article>
@@ -178,7 +178,6 @@ function setMobileMenu(open) {
   const nav = $("#nav");
   const overlay = $("#navOverlay");
   const btn = $("#menuBtn");
-
   if (!nav || !overlay || !btn) return;
 
   nav.classList.toggle("is-open", open);
@@ -190,8 +189,7 @@ function setMobileMenu(open) {
 function toggleMobileMenu() {
   const nav = $("#nav");
   if (!nav) return;
-  const open = !nav.classList.contains("is-open");
-  setMobileMenu(open);
+  setMobileMenu(!nav.classList.contains("is-open"));
 }
 
 function init() {
@@ -226,7 +224,13 @@ function init() {
   $("#menuBtn").addEventListener("click", toggleMobileMenu);
   $("#navOverlay").addEventListener("click", () => setMobileMenu(false));
   $("#nav").querySelectorAll("a").forEach(a => a.addEventListener("click", () => setMobileMenu(false)));
+
+  document.body.addEventListener("click", (e) => {
+    const btn = e.target.closest("[data-open]");
+    if (!btn) return;
+    const id = Number(btn.getAttribute("data-open"));
+    openModal(id);
+  });
 }
 
 init();
-
