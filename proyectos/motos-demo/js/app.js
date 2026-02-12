@@ -13,7 +13,7 @@ const motos = [
     tipo: "Sport",
     cc: 190,
     desc: "Moto sport ligera ideal para ciudad y carretera.",
-    img: "img/honda-cb190r.jpg",
+    img: "img/honda-cb190r.png",
     tags: ["Inyección","LED","5 cambios"]
   },
   {
@@ -24,7 +24,7 @@ const motos = [
     tipo: "Naked",
     cc: 150,
     desc: "Diseño urbano con excelente consumo.",
-    img: "img/yamaha-fzs150.jpg",
+    img: "img/yamaha-fzs150.png",
     tags: ["ABS","Ciudad","Económica"]
   },
   {
@@ -35,7 +35,7 @@ const motos = [
     tipo: "Clásica",
     cc: 125,
     desc: "Confiable y perfecta para trabajo diario.",
-    img: "img/suzuki-gn125.jpg",
+    img: "img/suzuki-gn125.png",
     tags: ["Duradera","Bajo consumo","Trabajo"]
   }
 ];
