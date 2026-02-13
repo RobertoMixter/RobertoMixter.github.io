@@ -235,65 +235,6 @@ body{
   transition:.25s;
 }
 
-.hero__card{
-  padding:28px;
-  display:flex;
-  flex-direction:column;
-  gap:14px;
-}
-
-.hero__cardTop{
-  display:flex;
-  justify-content:space-between;
-  align-items:flex-start;
-  gap:14px;
-}
-
-.hero__cardTop h3{
-  margin:0;
-  line-height:1.2;
-}
-
-.hero__cardTop p{
-  margin:6px 0 0;
-  line-height:1.65;
-}
-
-.hero__card p{
-  line-height:1.7;
-}
-
-.hero__card .pill{
-  margin-top:2px;
-}
-
-.flow{
-  display:grid;
-  gap:12px;
-  margin:24px 0;
-}
-
-.flow__item{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:20px;
-  padding:12px 16px;
-  border-radius:14px;
-  border:1px solid rgba(255,255,255,.10);
-  background:rgba(255,255,255,.03);
-}
-
-.flow__item b{
-  line-height:1.25;
-  flex-shrink:0;
-}
-
-.flow__item .muted{
-  line-height:1.25;
-  text-align:right;
-}
-
 .card__top{
   display:flex;
   justify-content:space-between;
@@ -373,6 +314,86 @@ body{
 .faq__icon{font-weight:900;color:var(--muted)}
 .faq__panel{display:none;padding:0 16px 16px}
 .faq__panel p{margin:0}
+
+.hero__card{
+  padding:30px;
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+}
+
+.hero__card *{
+  line-height:1.7;
+}
+
+.hero__card h3,
+.hero__card h4{
+  margin:0;
+  line-height:1.2;
+}
+
+.hero__card p{
+  margin:0;
+  color:var(--muted);
+}
+
+.hero__card .pill,
+.hero__card .chip,
+.hero__card .tag{
+  margin:0;
+}
+
+.hero__cardTop{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:14px;
+}
+
+.hero__cardTop > *{
+  margin:0;
+}
+
+.hero__cardTop .muted,
+.hero__cardTop p,
+.hero__cardTop small,
+.hero__cardTop span{
+  display:block;
+  margin-top:6px;
+  line-height:1.65;
+}
+
+.flow{
+  display:grid;
+  gap:12px;
+  margin:0;
+}
+
+.flow__item{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:14px;
+  padding:14px 14px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,.10);
+  background:rgba(255,255,255,.03);
+}
+
+.flow__item b,
+.flow__item strong{
+  display:block;
+  margin:0;
+  line-height:1.35;
+}
+
+.flow__item small,
+.flow__item span,
+.flow__item .muted{
+  display:block;
+  margin-top:4px;
+  line-height:1.35;
+}
 
 .about{
   display:grid;
@@ -561,3 +582,4 @@ a:hover{color:var(--accent-hover)}
   .grid--3{grid-template-columns:1fr}
   .grid--4{grid-template-columns:1fr}
 }
+
