@@ -111,6 +111,11 @@ body{
   box-shadow:0 0 18px var(--accentGlow);
 }
 
+.btn--primary:hover{
+  box-shadow:0 0 25px rgba(0,170,255,.60);
+  transform:translateY(-2px);
+}
+
 .btn--ghost{
   background:transparent;
   border:1px solid rgba(255,255,255,.18);
@@ -219,7 +224,7 @@ body{
   backdrop-filter:blur(18px);
   border:1px solid rgba(255,255,255,.12);
   border-radius:var(--radius);
-  box-shadow:0 25px 70px rgba(0,0,0,.65);
+  box-shadow:var(--shadow);
 }
 
 .card,
@@ -276,7 +281,7 @@ body{
   border:1px solid rgba(255,255,255,.12);
   border-radius:var(--radius);
   overflow:hidden;
-  box-shadow:0 25px 70px rgba(0,0,0,.65);
+  box-shadow:var(--shadow);
 }
 
 .work__thumb{
@@ -390,6 +395,11 @@ body{
   box-shadow:0 0 18px rgba(14,165,255,.35);
 }
 
+.about__cta .btn--primary:hover{
+  box-shadow:0 0 25px rgba(0,170,255,.60);
+  transform:translateY(-2px);
+}
+
 .about__cta .btn--ghost{
   background:transparent;
   border:1px solid rgba(255,255,255,.18);
@@ -460,17 +470,9 @@ body{
 a:hover{color:var(--accent-hover)}
 .nav a:hover{color:var(--accent-hover)}
 
-.btn:hover{
-  color:#000;
-  background:var(--accent-hover);
-  border-color:transparent;
-  box-shadow:0 0 18px rgba(255,214,10,.45);
-}
-
-.btn--primary:hover{
-  color:#000;
-  background:var(--accent-hover);
-  box-shadow:0 0 25px rgba(255,214,10,.60);
+.btn--ghost:hover{
+  border-color:var(--accent-hover);
+  color:var(--accent-hover);
 }
 
 .badge:hover{
