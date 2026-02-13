@@ -235,6 +235,63 @@ body{
   transition:.25s;
 }
 
+.hero__card{
+  padding:28px;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+
+.hero__cardTop{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:14px;
+}
+
+.hero__cardTop h3{
+  margin:0;
+  line-height:1.2;
+}
+
+.hero__cardTop p{
+  margin:6px 0 0;
+  line-height:1.65;
+}
+
+.hero__card p{
+  line-height:1.7;
+}
+
+.hero__card .pill{
+  margin-top:2px;
+}
+
+.flow{
+  display:grid;
+  gap:10px;
+  margin:6px 0 6px;
+}
+
+.flow__item{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  padding:10px 12px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,.10);
+  background:rgba(255,255,255,.03);
+}
+
+.flow__item b{
+  line-height:1.25;
+}
+
+.flow__item .muted{
+  line-height:1.25;
+}
+
 .card__top{
   display:flex;
   justify-content:space-between;
