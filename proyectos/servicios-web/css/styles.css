@@ -269,16 +269,16 @@ body{
 
 .flow{
   display:grid;
-  gap:10px;
-  margin:6px 0 6px;
+  gap:12px;
+  margin:24px 0;
 }
 
 .flow__item{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  gap:12px;
-  padding:10px 12px;
+  gap:20px;
+  padding:12px 16px;
   border-radius:14px;
   border:1px solid rgba(255,255,255,.10);
   background:rgba(255,255,255,.03);
@@ -286,10 +286,12 @@ body{
 
 .flow__item b{
   line-height:1.25;
+  flex-shrink:0;
 }
 
 .flow__item .muted{
   line-height:1.25;
+  text-align:right;
 }
 
 .card__top{
